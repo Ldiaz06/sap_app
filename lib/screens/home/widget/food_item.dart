@@ -57,7 +57,16 @@ class FoodItem extends StatelessWidget {
                       height: 1.5,
                     ),
                   ),
-                  SizedBox(height: 5)
+                  SizedBox(height: 5),
+                  Row(children: [
+                    Text(
+                      '${food.price}',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ])
                 ],
               ),
             ))
